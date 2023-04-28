@@ -58,7 +58,7 @@ button:hover {
 
 @media only screen and (max-width: 900px) {
     .main{
-        left: 27%;
+        left: 33%;
     }
     .box:hover{
         background-color: rgb(9, 4, 75);
