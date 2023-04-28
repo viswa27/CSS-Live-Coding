@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(180, 211, 135);
+}
+
+h1 {
+    text-align: center;
+    animation: strink 2s infinite;
+}
+
+@keyframes strink {
+    0%,100% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(0.5);
+    }
+}
+
+h3 {
+    color: white;
+}
+
+.main {
+    display: flex;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box {
+    width: 250px;
+    height: 350px;
+    background-color: rgb(57, 175, 57);
+    text-align: center;
+    padding-top: 10%;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 25px;
+}
+
+.box:hover{
+    background-color: blue;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: blue;
+}
+
+@media only screen and (max-width: 900px) {
+    .main{
+        left: 27%;
+    }
+    .box:hover{
+        background-color: rgb(9, 4, 75);
+        color: green;
+    }
+    
+    button:hover {
+        background-color: red;
+        color: blue;
+    }
+}
